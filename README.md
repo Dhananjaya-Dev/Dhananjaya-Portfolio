@@ -1,6 +1,19 @@
 # Dhananjaya Barik — Full Stack Java Developer Portfolio
 
+[![Live Site](https://img.shields.io/badge/Live%20Website-dhananjayabarik.vercel.app-00f3ff?style=for-the-badge&logo=vercel&logoColor=black)](https://dhananjayabarik.vercel.app/)
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-gray?style=for-the-badge)](LICENSE)
+
 A premium, modern, recruiter-focused personal portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**.
+
+---
+
+## 🌐 Live Website
+
+Experience the interactive portfolio directly in your browser:  
+👉 **[https://dhananjayabarik.vercel.app/](https://dhananjayabarik.vercel.app/)**
 
 ---
 
