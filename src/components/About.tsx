@@ -3,7 +3,8 @@ import { PERSONAL_INFO } from '../data/portfolioData';
 import {
   Sparkles,
   MapPin,
-  CheckCircle2
+  CheckCircle2,
+  Code2
 } from 'lucide-react';
 
 export const About: React.FC = () => {
@@ -136,6 +137,52 @@ export const About: React.FC = () => {
               <p>
                 <strong className="text-slate-200 font-medium">Committed to growth:</strong> Actively coding, refining microservice architectural patterns, and applying best practices in RESTful design and relational databases daily.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* GitHub & Coding Activity Sync - Stats & Graph Layout */}
+        <div className="mt-14 pt-8 border-t border-white/[0.08]">
+          <div className="flex flex-col sm:flex-row items-center justify-between mb-6 gap-4">
+            <div className="flex items-center gap-2">
+              <div className="p-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
+                <Code2 className="w-4 h-4" />
+              </div>
+              <div>
+                <h3 className="text-sm font-mono uppercase tracking-wider text-white">
+                  GitHub & Coding Activity Sync
+                </h3>
+                <p className="text-xs text-slate-400">
+                  Automated LeetCode problem sync & live version-control metrics
+                </p>
+              </div>
+            </div>
+            <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-cyan-950/60 text-cyan-400 border border-cyan-500/20">
+              Live Feed
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            {/* GitHub Main Stats Card (6 Cols) */}
+            <div className="lg:col-span-6 p-6 rounded-2xl bg-[#111422]/80 border border-white/[0.08] flex justify-center items-center overflow-x-auto shadow-lg backdrop-blur-sm">
+              <img 
+                src="https://github-readme-stats.vercel.app/api?username=Dhananjaya-Dev&show_icons=true&theme=radical&hide_border=true&bg_color=111422&hide=prs,issues" 
+                alt="Dhananjaya's GitHub Stats" 
+                className="max-w-full h-auto"
+              />
+            </div>
+
+            {/* GitHub Streak Card (6 Cols) */}
+            <div className="lg:col-span-6 p-6 rounded-2xl bg-[#111422]/80 border border-white/[0.08] flex flex-col justify-center items-center overflow-x-auto shadow-lg backdrop-blur-sm">
+              <div className="w-full flex items-center justify-between mb-3">
+                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">GitHub Streak Stats</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Active Sync</span>
+              </div>
+              <img 
+                src="https://github-readme-streak-stats.herokuapp.com?user=Dhananjaya-Dev&theme=radical&hide_border=true&background=111422" 
+                alt="Dhananjaya's GitHub Streak" 
+                className="w-full h-auto rounded-xl"
+              />
             </div>
           </div>
         </div>
