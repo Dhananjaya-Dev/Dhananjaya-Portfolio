@@ -163,13 +163,29 @@ export const About: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            {/* GitHub Main Stats Card (6 Cols) */}
-            <div className="lg:col-span-6 p-6 rounded-2xl bg-[#111422]/80 border border-white/[0.08] flex justify-center items-center overflow-x-auto shadow-lg backdrop-blur-sm">
-              <img 
-                src="https://github-readme-stats.vercel.app/api?username=Dhananjaya-Dev&show_icons=true&theme=radical&hide_border=true&bg_color=111422&hide=prs,issues" 
-                alt="Dhananjaya's GitHub Stats" 
-                className="max-w-full h-auto"
-              />
+            {/* GitHub Main Stats Card (6 Cols) - Custom Clean Layout */}
+            <div className="lg:col-span-6 p-6 rounded-2xl bg-[#111422]/80 border border-white/[0.08] flex flex-col justify-between shadow-lg backdrop-blur-sm">
+              <div>
+                <div className="w-full flex items-center justify-between mb-4">
+                  <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">GitHub Overview</span>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Active Profile</span>
+                </div>
+                <h4 className="text-white font-semibold text-sm mb-3">Dhananjaya Barik's Repository Activity</h4>
+                <p className="text-xs text-slate-400 leading-relaxed mb-4">
+                  Focused on building full-stack applications, microservices architecture, and clean user interfaces with daily version-control tracking.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/[0.06]">
+                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.04]">
+                  <span className="text-[10px] font-mono text-slate-400 block mb-1">Total Commits</span>
+                  <span className="text-lg font-bold font-mono text-cyan-400">34+</span>
+                </div>
+                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.04]">
+                  <span className="text-[10px] font-mono text-slate-400 block mb-1">Repositories</span>
+                  <span className="text-lg font-bold font-mono text-emerald-400">10+</span>
+                </div>
+              </div>
             </div>
 
             {/* GitHub Streak Card (6 Cols) */}
